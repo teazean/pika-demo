@@ -1,0 +1,25 @@
+{
+  "name": "pika",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack src/webpack.js -o ./dist/webpack.js",
+    "serve": "python -m SimpleHTTPServer",
+    "prepare": "pika-web"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "random-js": "^2.0.0"
+  },
+  "@pika/web": {
+    "webDependencies": [
+      "random-js"
+    ]
+  },
+  "devDependencies": {
+    "@pika/web": "^0.4.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
